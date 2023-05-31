@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>E. Paolini: On the Steiner Tree... (Bressanone 2023)</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+		<link rel="stylesheet" href="mystyle.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<!-- Enable MathJAX -->
+		<!--script>MathJax = {tex: {inlineMath: [['$', '$']]}};</script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script-->
+		<!--script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script-->		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2><b>On the Steiner Tree connecting a fractal set</b></h2>
+					<h4></h4>
+					<h4>[E. Paolini: Università di Pisa]</h4>
+					<h4></h4>
+					<h3>Bressanone &dash; Jun 2, 2023</h3>
+				</section>
+				<section>
+					<img class="center" src="tree.png" height=500>
+					<p>
+						Is it minimal?
+					</p>
+					<p>
+						(Joint work with E. Stepanov)
+					</p>
+				</section>
+				<section>
+				<h4>Plan</h4>
+					<ul>
+						<li>the classical Steiner Problem</li>
+						<li>generalization to infinite sets</li>
+						<li>minimality of the infinite self-similar complete binary tree</li>
+					</ul>
+				</section>
+				<section>
+					Fermàt point (Cavalieri, Torricelli, 1600)
+					<img src="fermat.png">
+					<img class="fragment" src="angle.png">
+				</section>
+				<section>
+					Extension proposed by Steiner
+					<br />
+					<img height="300" src="center.png">
+				</section>
+				<section>
+					Generalization proposed by Courant-Robbins (1941)
+					<br />
+					<img src="steiner.png">
+				</section>
+				<section>
+					Solution given by Jarník-Kössler (1934)
+					Steps for existence:
+					<ul>
+						<li>no loops</li>
+						<li>a priori bound on topology</li>
+						<li>yellowuction to finite dimensional problem</li>
+					</ul>
+					Examples:
+					<img src="polygons.png">
+				</section>
+				<section>
+					<p>
+						<b>Classical approach:</b>
+						union of curves,<br/>
+						Ivanov-Tuzhilin (1984)
+					</p>
+					<p>
+						<b>Set theoretic approach:</b>
+						compact sets, Hausdorff measure
+						Ambrosio-Tilli (2004)
+					</p>
+					<p>
+						<b>GMT approach:</b>
+						$G$-currents and calibrations,
+						Marchese-Massacesi (2016)
+					</p>
+				</section>
+				<section>
+					<h4>Set theoretic approach</h4>
+					<ul>
+						<li>
+							the <b>ambient</b> is a metric space $X$
+						</li>
+						<li>
+							the <b>given</b> is a compact set $\color{yellow} A$
+						</li>
+						<li>
+							the <b>unknown</b> is a set $\color{white}S$
+						</li>
+						<li>
+							the <b>energy</b> is the Hausdorff $\mathcal H^1$ measure
+						</li>
+						<li>
+							the <b>constraint</b> is topological connectedness
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h4>possible formulations</h4>
+					<p>
+					Given a compact set $\color{yellow} A$,
+					find $\color{white} S$ 
+					such that $\mathcal H^1({\color{white}S})$ is minimal
+					among all sets such that (choose one):
+					<br />
+					<br />
+						<b>(a)</b> $\color{white} S$ is a <b>compact connected</b> set <b>containing</b> $\color{yellow} A$</li>
+					<br />
+					<br />
+					<b>(b)</b> $\color{white} S$ is a <b>compact connected</b> set such that ${\color{white}S}\cup {\color{yellow}A}$ is also <b>connected</b></li>
+					(Ducret-Troyanov, 2008)</li>
+					<br />
+					<br />
+						<b>(c)</b> ${\color{white}S}\cup {\color{yellow}A}$ is <b>connected</b></li>
+						(P.-Stepanov, 2012)</li>
+					</p>
+				</section>
+				<section>
+					<h4>comparing the different formulations (a) (b) (c)</h4>
+						<img src="comparison1.png">
+						<img class="fragment" src="comparison2.png">
+				</section>
+				<section>
+					<h4>Tools</h4>
+					<ul>
+						<li>
+							<b>compactness:</b>
+							the family of compact subsets of a compact space 
+							is compact in the Hausdorff metric
+						</li>
+						<li>
+							<b>lower-semicontinuity:</b>
+							$\mathcal H^1$ is l.s.c. with respect to the Hausdorff metric
+							on connected sets (Gołąb)
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Existence</h4>
+					If $X$ is a proper complete connected metric space then 
+					minimizers exist.
+				</section>
+				<section>
+					<h4>Properties of minimizers, formulation (c)</h4>
+					<p>
+						If $\color{white} S$ is a minimizer with $\mathcal H^1({\color{white}S})<\infty$ then
+						<ul>
+							<li>$\color{white} S$ contains no loops</li>
+							<li>each connected component $C$ of ${\color{white}S}\setminus \color{yellow}A$ has 
+								$\mathcal H^1(\bar C) = \mathcal H^1(C) > 0$ 
+								and $\bar C$ has at most one single point on each 
+								connected component of $\color{yellow} A$
+							</li>
+							<li>
+								connected components of ${\color{white}S}\setminus {\color{yellow}A}$ 
+								are countable
+							</li>
+							<li>
+								${\color{white}S}\setminus {\color{yellow}A}$ is a locally finite 
+								embedded tree composed by geodesic arcs
+							</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h4>Example 1</h4>
+					<img src="infinite.png">
+					$$
+					{{\color{yellow}A}}=\left\{\left(\frac 1 n,\frac 1 m\right)\colon n,m \in \mathbb N \cup \{\infty\}\right\}
+					$$
+					Minimizers have infinite length.
+				</section>
+				<section>
+					<h4>Example 2</h4>
+					${\color{yellow}A} \subset [0,1]$ totally disconnected, uncountable, 
+					$\mathcal H^1({\color{yellow}A})>0$, ${\color{white}S}=[0,1]\setminus {\color{yellow}A}$ (Cantor-like)
+					<img src="cantor.png">
+					$$
+					\#\{\text{c.c. of } {\color{yellow}A}\}
+					&gt; 
+					\#\{\text{c.c. of } {\color{white}S}\}
+					$$
+					$$
+					\mathcal H^1(\bar {\color{white}S}) > \mathcal H^1({\color{white}S})
+					$$
+				</section>
+				<section>
+					<h4>Example 3</h4>
+					If $\color{yellow} A$ is not bounded minimizers could not exist
+					<img src="unbounded.png">
+				</section>
+				<section>
+					<h4>Example 5 (open problem)</h4>
+					What if $\color{yellow} A$ is bounded but not closed?
+					<br />
+					<img src="open.png">
+					<br />
+					In this case minimizers exist 
+					and ${\color{white}S}\cup {\color{yellow}A}$ is connected but 
+					not pathwise-connected.
+				</section>
+				<section>
+					<h4>The self-similar full binary tree Example</h4>
+					<img src="branch.png">
+					<ul>
+						<li>
+						P-Stepanov-Teplitskaya (2015): $\color{white} S$ is the unique minimizer 
+						if $\lambda_n\to 0$ very fast.
+						</li>
+						<li>
+						Cherkashin-Teplitskaya (2023): $\color{white} S$ is a minimizer
+						if $\lambda_n = \lambda^n$ with $\lambda$ sufficiently small.
+						</li>
+					</ul>
+				</section>
+				<section>
+					<b>Note:</b> if $\lambda_n=\lambda^n$ the set $\color{yellow} A$ has 
+					a self-similarity dimension $d = \frac{\log 2}{-\log \lambda}$
+					which is $d=1$ for $\lambda=\frac 1 2$.
+				</section>
+				<section data-transition="fade">
+					<img src="proof1.png">
+				</section>
+				<section data-transition="fade">
+					<img src="proof2.png">
+				</section>
+				<section data-transition="fade">
+					<img src="proof3.png">
+				</section>
+				<section data-transition="fade">
+					<img src="proof4.png">
+				</section>
+				<section data-transition="fade">
+					<img src="proof5.png">
+				</section>
+				<section data-transition="fade">
+					<img src="proof6.png">
+				</section>
+				<section>					
+				</section>
+				<section>
+					<h2>thank you!</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
