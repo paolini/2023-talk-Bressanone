@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>E. Paolini: On the Steiner Tree... (Bressanone 2023)</title>
+		<title>E. Paolini: On the Steiner Tree... (Brixen 2023)</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -30,13 +30,12 @@
 					<h3>Bressanone &dash; Jun 2, 2023</h3>
 				</section>
 				<section>
-					<img class="center" src="tree.png" height=500>
-					<p>
+					<h4>
 						Is it minimal?
-					</p>
-					<p>
-						(Joint work with E. Stepanov)
-					</p>
+					</h4>
+					<img class="center" src="tree.png" height=500>
+					<br>
+					(Joint work with E. Stepanov)
 				</section>
 				<section>
 				<h4>Plan</h4>
@@ -47,30 +46,53 @@
 					</ul>
 				</section>
 				<section>
-					Fermàt point (Cavalieri, Torricelli, 1600)
-					<img src="fermat.png">
-					<img class="fragment" src="angle.png">
+					<h4>
+						Fermàt point 
+					</h4>
+					<div class="r-stack">
+						<img src="fermat1.png">
+						<img class="fragment" src="fermat2.png">
+					</div>					
+					(Cavalieri, Torricelli, 1600)
+					<!--div class="r-stack">
+						<img class="fragment" src="angle1.png">
+						<img class="fragment" src="angle2.png">
+					</div-->
 				</section>
 				<section>
-					Extension proposed by Steiner
+					<h4>
+						Extension proposed by Steiner
+					</h4>
 					<br />
-					<img height="300" src="center.png">
+					<div class="r-stack">
+						<img src="center1.png">
+						<img class="fragment" src="center2.png">
+					</div>
 				</section>
 				<section>
-					Generalization proposed by Courant-Robbins (1941)
+					<h4>Generalization proposed by Courant-Robbins (1941)</h4>
 					<br />
-					<img src="steiner.png">
+					<div class="r-stack">
+						<img src="steiner1.png">
+						<img class="fragment" src="steiner2.png">
+					</div>
 				</section>
 				<section>
-					Solution given by Jarník-Kössler (1934)
-					Steps for existence:
+					<h4>
+					Formalization given by Jarník-Kössler (1934)
+					</h4>
+					<p>
+						Steps for existence:
 					<ul>
 						<li>no loops</li>
 						<li>a priori bound on topology</li>
-						<li>yellowuction to finite dimensional problem</li>
+						<li>reduction to finite dimensional problem</li>
 					</ul>
-					Examples:
-					<img src="polygons.png">
+					</p>
+					<p>
+						Examples:
+						<img src="polygons.png">
+					</p>
 				</section>
 				<section>
 					<p>
@@ -110,6 +132,21 @@
 					</ul>
 				</section>
 				<section>
+					<h4>Tools</h4>
+					<ul>
+						<li>
+							<b>compactness:</b>
+							the family of compact subsets of a compact space 
+							is compact in the Hausdorff metric
+						</li>
+						<li>
+							<b>lower-semicontinuity:</b>
+							$\mathcal H^1$ is l.s.c. with respect to the Hausdorff metric
+							on connected sets (Gołąb)
+						</li>
+					</ul>
+				</section>
+				<section>
 					<h4>possible formulations</h4>
 					<p>
 					Given a compact set $\color{yellow} A$,
@@ -130,24 +167,28 @@
 					</p>
 				</section>
 				<section>
-					<h4>comparing the different formulations (a) (b) (c)</h4>
-						<img src="comparison1.png">
-						<img class="fragment" src="comparison2.png">
+					<h4>comparing the different formulations (1)</h4>
+					<img height="200" src="comparison_a1.png">
+					<div>
+						(a)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_a2.png">
+						&nbsp;(b)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_a3.png">
+						&nbsp;(c)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_a4.png">
+					</div>
 				</section>
 				<section>
-					<h4>Tools</h4>
-					<ul>
-						<li>
-							<b>compactness:</b>
-							the family of compact subsets of a compact space 
-							is compact in the Hausdorff metric
-						</li>
-						<li>
-							<b>lower-semicontinuity:</b>
-							$\mathcal H^1$ is l.s.c. with respect to the Hausdorff metric
-							on connected sets (Gołąb)
-						</li>
-					</ul>
+					<h4>comparing the different formulations (2)</h4>
+					<img height="200" src="comparison_b1.png">
+					<div>
+						(a)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_b2.png">
+						&nbsp;(b)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_b3.png">
+						&nbsp;(c)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_b4.png">
+					</div>
 				</section>
 				<section>
 					<h4>Existence</h4>
@@ -178,7 +219,10 @@
 				</section>
 				<section>
 					<h4>Example 1</h4>
-					<img src="infinite.png">
+					<div class="r-stack">
+						<img src="infinite1.png">
+						<img class="fragment" src="infinite2.png">
+					</div>
 					$$
 					{{\color{yellow}A}}=\left\{\left(\frac 1 n,\frac 1 m\right)\colon n,m \in \mathbb N \cup \{\infty\}\right\}
 					$$
@@ -186,9 +230,14 @@
 				</section>
 				<section>
 					<h4>Example 2</h4>
+					<br>
+					<div class="r-stack">
+						<img src="cantor1.png">
+						<img class="fragment" src="cantor2.png">
+					</div>
+					<br>
 					${\color{yellow}A} \subset [0,1]$ totally disconnected, uncountable, 
 					$\mathcal H^1({\color{yellow}A})>0$, ${\color{white}S}=[0,1]\setminus {\color{yellow}A}$ (Cantor-like)
-					<img src="cantor.png">
 					$$
 					\#\{\text{c.c. of } {\color{yellow}A}\}
 					&gt; 
@@ -201,13 +250,19 @@
 				<section>
 					<h4>Example 3</h4>
 					If $\color{yellow} A$ is not bounded minimizers could not exist
-					<img src="unbounded.png">
+					<div class="r-stack">
+						<img src="unbounded1.png">
+						<img class="fragment" src="unbounded2.png">
+					</div>
 				</section>
 				<section>
 					<h4>Example 5 (open problem)</h4>
 					What if $\color{yellow} A$ is bounded but not closed?
 					<br />
-					<img src="open.png">
+					<div class="r-stack">
+						<img src="open1.png">
+						<img class="fragment" src="open2.png">
+					</div>
 					<br />
 					In this case minimizers exist 
 					and ${\color{white}S}\cup {\color{yellow}A}$ is connected but 
@@ -215,7 +270,7 @@
 				</section>
 				<section>
 					<h4>The self-similar full binary tree Example</h4>
-					<img src="branch.png">
+					<img height="300" src="branch.png">
 					<ul>
 						<li>
 						P-Stepanov-Teplitskaya (2015): $\color{white} S$ is the unique minimizer 
@@ -230,27 +285,44 @@
 				<section>
 					<b>Note:</b> if $\lambda_n=\lambda^n$ the set $\color{yellow} A$ has 
 					a self-similarity dimension $d = \frac{\log 2}{-\log \lambda}$
-					which is $d=1$ for $\lambda=\frac 1 2$.
+					which is $d>1$ for $\lambda>\frac 1 2$.
 				</section>
-				<section data-transition="fade">
-					<img src="proof1.png">
+				<section>
+					<h4>Proof (1)</h4>
+					<div class="r-stack">
+						<img src="proof1.png">
+						<img class="fragment" src="proof2.png">
+						<img class="fragment" src="proof3.png">
+						<img class="fragment" src="proof4.png">
+						<img class="fragment" src="proof4b.png">
+						<img class="fragment" src="zoom0.png">
+						<img class="fragment" src="zoom1.png">
+						<img class="fragment" src="zoom2.png">
+					</div>
 				</section>
-				<section data-transition="fade">
-					<img src="proof2.png">
+				<section>
+					<h4>Proof (2)</h4>
+					<div>
+						<img src="proof5.png">
+						<img src="proof6.png">
+					</div>
+					<p>
+						\[
+						\varepsilon_0 \le \varepsilon_1^+ + \varepsilon_1^- 
+						\le 2 \max\{\varepsilon_1^+,\varepsilon_1^-\} 
+						= 2 \varepsilon_1\\
+						\varepsilon_n \le \lambda_{n+1} \le \lambda^{n+1}
+						\]
+					</p>
 				</section>
-				<section data-transition="fade">
-					<img src="proof3.png">
-				</section>
-				<section data-transition="fade">
-					<img src="proof4.png">
-				</section>
-				<section data-transition="fade">
-					<img src="proof5.png">
-				</section>
-				<section data-transition="fade">
-					<img src="proof6.png">
-				</section>
-				<section>					
+				<section>
+					<h4>Proof (3)</h4>
+					<div class="r-stack">
+						<img src="proof7.png">
+						<img class="fragment" src="proof8.png">
+						<img class="fragment" src="proof9.png">
+						<img class="fragment" src="proof10.png">
+					</div>
 				</section>
 				<section>
 					<h2>thank you!</h2>
