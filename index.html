@@ -23,37 +23,16 @@
 		<!--
 			color to alpha with imagemagik:
 
-convert                        \
-    prova.png               \
-    \(                         \
-       -clone 0                \
-       -fill "#a010101"        \
-       -colorize 100           \
-    \)                         \
-    \(                         \
-       -clone 0,1              \
-       -compose difference     \
-       -composite              \
-       -separate               \
-       +channel                \
-       -evaluate-sequence max  \
-       -auto-level             \
-    \)                         \
-     -delete 1                 \
-     -alpha off                \
-     -compose over             \
-     -compose copy_opacity     \
-     -composite                \
-    out.png
+		convert prova.png \( -clone 0 -fill "#a010101" -colorize 100 \) \( -clone 0,1 -compose difference -composite -separate +channel -evaluate-sequence max -auto-level \) -delete 1 -alpha off -compose over -compose copy_opacity -composite out.png
 		-->
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2><b>On the Steiner Tree connecting a fractal set</b></h2>
+					<h2><b>on the Steiner tree <br>connecting<br> a fractal set</b></h2>
 					<h4></h4>
 					<h4>[E. Paolini: Università di Pisa]</h4>
 					<h4></h4>
-					<h3>Bressanone &dash; Jun 2, 2023</h3>
+					<h3>Brixen &dash; Jun 2, 2023</h3>
 				</section>
 				<section>
 					<img class="center" src="tree.png" height=500>
@@ -172,7 +151,7 @@ convert                        \
 						<li>
 							<b>compactness:</b>
 							the family of compact subsets of a compact space 
-							is compact in the Hausdorff metric
+							is compact in the Hausdorff metric (Blaschke)
 						</li>
 						<li>
 							<b>lower-semicontinuity:</b>
@@ -207,9 +186,13 @@ convert                        \
 					<div>
 						(a)
 						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_a2.png">
-						&nbsp;(b)
+						&nbsp;
+						&nbsp;
+						(b)
 						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_a3.png">
-						&nbsp;(c)
+						&nbsp;
+						&nbsp;
+						(c)
 						<img style="vertical-align: middle;" class="fragment" height="200" src="comparison_a4.png">
 					</div>
 				</section>
@@ -356,11 +339,20 @@ convert                        \
 						<img src="proof7.png">
 						<img class="fragment" src="proof8.png">
 						<img class="fragment" src="proof9.png">
-						<img class="fragment" src="proof10.png">
 					</div>
 				</section>
 				<section>
-					<h2>thank you!</h2>
+					<h4>Proof (4)</h4>
+					<div class="r-stack">
+						<img src="proof10.png">
+						<img class="fragment" src="proof11.png">
+					</div>
+				</section>
+				<section>
+					<img class="center" src="tree.png" height=500>
+					<div class="fragment">
+						<b>thank you!</b>
+					</div>
 				</section>
 			</div>
 		</div>
