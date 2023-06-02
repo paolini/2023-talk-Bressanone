@@ -20,6 +20,32 @@
 		<!--script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script-->		
 	</head>
 	<body>
+		<!--
+			color to alpha with imagemagik:
+
+convert                        \
+    prova.png               \
+    \(                         \
+       -clone 0                \
+       -fill "#a010101"        \
+       -colorize 100           \
+    \)                         \
+    \(                         \
+       -clone 0,1              \
+       -compose difference     \
+       -composite              \
+       -separate               \
+       +channel                \
+       -evaluate-sequence max  \
+       -auto-level             \
+    \)                         \
+     -delete 1                 \
+     -alpha off                \
+     -compose over             \
+     -compose copy_opacity     \
+     -composite                \
+    out.png
+		-->
 		<div class="reveal">
 			<div class="slides">
 				<section>
@@ -30,12 +56,9 @@
 					<h3>Bressanone &dash; Jun 2, 2023</h3>
 				</section>
 				<section>
-					<h4>
-						Is it minimal?
-					</h4>
 					<img class="center" src="tree.png" height=500>
 					<br>
-					(Joint work with E. Stepanov)
+					Joint work with E. Stepanov
 				</section>
 				<section>
 				<h4>Plan</h4>
@@ -50,14 +73,10 @@
 						Fermàt point 
 					</h4>
 					<div class="r-stack">
-						<img src="fermat1.png">
-						<img class="fragment" src="fermat2.png">
+						<img src="triangle1.png">
+						<img class="fragment" src="triangle2.png">
 					</div>					
-					(Cavalieri, Torricelli, 1600)
-					<!--div class="r-stack">
-						<img class="fragment" src="angle1.png">
-						<img class="fragment" src="angle2.png">
-					</div-->
+						(Cavalieri, Torricelli)
 				</section>
 				<section>
 					<h4>
@@ -93,6 +112,22 @@
 						Examples:
 						<img src="polygons.png">
 					</p>
+				</section>
+				<section>
+					<h4>Melzak's construction</h4>
+					<div class="r-stack">
+						<img src="melzak1.png">
+						<img class="fragment" src="melzak2.png">
+						<img class="fragment" src="melzak3.png">
+						<img class="fragment" src="melzak4.png">
+						<img class="fragment" src="melzak5.png">
+						<img class="fragment" src="melzak6.png">
+						<img class="fragment" src="melzak7.png">
+						<img class="fragment" src="melzak8.png">
+						<img class="fragment" src="melzak9.png">
+						<img class="fragment" src="melzak10.png">
+						<img class="fragment" src="melzak11.png">						
+					</div>
 				</section>
 				<section>
 					<p>
