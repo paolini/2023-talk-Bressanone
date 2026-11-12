@@ -369,6 +369,9 @@
 			Reveal.initialize({
 				hash: true,
 
+				// KaTeX bundled locally so the slides work offline
+				katex: { local: 'lib/katex' },
+
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});

@@ -1,0 +1,37 @@
+{
+  "upload_type": "presentation",
+  "title": "On the Steiner tree connecting a fractal set",
+  "description": "<p>Slides of the talk given on 2 June 2023 at the conference <em>Geometric Measure Theory, Bressanone 2023</em> (Bressanone (Brixen), Italy, 29 May - 2 June 2023).</p><p>The slides are an HTML presentation built with <a href=\"https://revealjs.com/\">reveal.js</a>: unzip the archive and open <code>index.html</code> in a web browser. All dependencies are bundled, so no internet connection is needed.</p><p>Online version: <a href=\"https://paolini.github.io/2023-talk-Bressanone/\">https://paolini.github.io/2023-talk-Bressanone/</a></p>",
+  "creators": [
+    {
+      "name": "Paolini, Emanuele",
+      "affiliation": "Università di Pisa",
+      "orcid": "0000-0001-7021-7537"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "geometric measure theory",
+    "Steiner tree",
+    "Steiner problem",
+    "fractal sets",
+    "calculus of variations"
+  ],
+  "conference_title": "Geometric Measure Theory, Bressanone 2023",
+  "conference_dates": "29 May - 2 June 2023",
+  "conference_place": "Bressanone (Brixen), Italy",
+  "conference_url": "https://cvgmt.sns.it/event/755/",
+  "related_identifiers": [
+    {
+      "identifier": "https://cvgmt.sns.it/event/755/",
+      "relation": "isPartOf",
+      "resource_type": "event"
+    },
+    {
+      "identifier": "https://paolini.github.io/2023-talk-Bressanone/",
+      "relation": "isIdenticalTo",
+      "resource_type": "presentation"
+    }
+  ]
+}
